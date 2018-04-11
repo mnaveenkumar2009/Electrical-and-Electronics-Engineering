@@ -1,0 +1,13 @@
+Vr=I*r;
+Vx=I*x;
+Vt=Vx+Vr;
+VRl=I*Rl;
+PE=E*conj(-I);
+Pr=I*conj(I)*r;
+Px=I*conj(I)*x;
+PRl=I*conj(I)*Rl;
+disp(PE,"Power across Voltage source");
+disp(Pr,"Power across r");
+disp(Px,"Power across x");
+disp(PRl,"Power across Rl");
+disp(PRl+Px+Pr+PE,"Total Power:");
