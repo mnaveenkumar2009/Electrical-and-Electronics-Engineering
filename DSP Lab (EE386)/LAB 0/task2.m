@@ -1,0 +1,9 @@
+ecgD=load("dsplab/ECG_Data.txt");
+plot(ecgD);
+figure
+subplot(2,1,1);
+hist(load('dsplab/RainFallIndia_Jan.txt'));
+subplot(2,1,2);
+hist(load('dsplab/RainFallIndia_July.txt'));
+[a,Fs]=wavread('dsplab/Track001.wav');
+sound(a,Fs);
