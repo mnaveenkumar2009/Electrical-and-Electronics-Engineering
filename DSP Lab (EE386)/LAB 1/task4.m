@@ -28,7 +28,4 @@ title('High pass filter ConvFile1.txt');
 ylabel('Magnitude')
 xlabel('Frequency')
 
-saveas(gcf,'output/plot4_filters.png')task1
-task2
-task3
-task4
+saveas(gcf,'output/plot4_filters.png')
