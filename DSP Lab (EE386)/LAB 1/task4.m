@@ -16,7 +16,7 @@ subplot(2,1,1);
 x=fft(Conv2);
 x=abs(x);
 plot(x.*x);
-title('Low pass filter ConvFile1.txt');
+title('Low pass filter ConvFile2.txt');
 ylabel('Magnitude')
 xlabel('Frequency')
 
