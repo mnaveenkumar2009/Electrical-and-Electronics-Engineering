@@ -6,7 +6,6 @@ for ii=[1000:500:2500]
 		t=0.5*(i-1):1/Fs:(0.5*i-1/Fs);
 		y=[y sin(F(i)*2*pi*t)];
 	end
-	disp((ii-500)/500)
-	wavwrite(y,Fs,['naveen' s((ii-500)/500) '.wav']);
+	wavwrite(y,Fs,['output/naveen' s((ii-500)/500) '.wav']);
+	sound(y,Fs)
 end
-
