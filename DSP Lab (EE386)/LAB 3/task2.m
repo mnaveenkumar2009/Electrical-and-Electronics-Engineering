@@ -23,11 +23,11 @@ saveas(gcf,['output/frespec.png']);
 % task c)
 
 [maxi,ind]=max(decib(2:N-2));
-ind=ind+1;
+ind=ind+1; % as we started with 2
 [maxi,ind]=max(decib(2:ind-1)); %ignore the 3Hz as it is just too high for a normal human and take second highest
-
-ind=min(ind,N-ind);
-disp('Heart Rate in BPM:')
+ind=ind+1; % as we started with 2
+ind=min(ind,N+1-ind);
+disp('Heart Rate in BPM:');
 hr=(ind-1)*Fs/N;
 hr= hr*60; % in beats per minute
 disp(hr);
