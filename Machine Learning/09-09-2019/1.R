@@ -16,4 +16,5 @@ student_data <- data.frame(
     stringsAsFactors = FALSE
 )
 write.csv(student_data, file= "std.csv")
-save(student_data, file= "std2.csv")
+save(student_data, file= "std2.csv") 
+print(student_data)
